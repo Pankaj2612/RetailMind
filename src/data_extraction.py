@@ -30,8 +30,3 @@ if df[TARGET].isna().any():
 
 X = df.drop(columns=TARGET)
 y = df[TARGET].astype(int)
-
-# print("Feature matrix:", X.shape)
-# print("Target vector:", y.shape)
-# print("\nMissing values by feature (non-zero only):")
-# print(X.isna().sum()[X.isna().sum() > 0])
